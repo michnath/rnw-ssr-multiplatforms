@@ -4,8 +4,17 @@
       "targets": {
         "node": 6
       }
-    }]
+    }],
+    "babel-preset-env",
+    "babel-preset-expo",
+    "@babel/preset-env",
+    "env", "stage-0", "react-native"
   ],
+  "env": {
+    "development": {
+      "plugins": ["transform-object-rest-spread", "transform-react-jsx-source"]
+    }
+  },
   "plugins": [
     "react-native-web",
     "react-loadable/babel", ["module-resolver", {
